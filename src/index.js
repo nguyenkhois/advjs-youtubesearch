@@ -82,4 +82,5 @@ $(document).ready(function () {
         });
     });
     //-----End of search from API-----
+    
 });
