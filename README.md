@@ -8,7 +8,7 @@
 ## Using
 * Please read before testing this app:
     * Create and login with your account on Google.
-    * Get your `client_id` and config `redirect_uri` in your Dashboard on [Spotify Development](https://console.developers.google.com/) and change them in `src/index.js` before you rebuild this app for end result.
+    * Get your `client_id` and config `redirect_uri` in your Dashboard on [Google Developers](https://console.developers.google.com/) and change them in `src/index.js` before you rebuild this app for end result.
     * You must create an app and config your API on Google before using this app. View more information on [Google Developers](https://developers.google.com/youtube/v3/getting-started)
 * [Read more about jQuery - Ajax](http://api.jquery.com/jquery.ajax/)
 
