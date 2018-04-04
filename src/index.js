@@ -45,10 +45,20 @@ $(document).ready(function () {
     //MAIN
     //-----Authorization the user-----
     let client_id = "YOUR_CLIENT_ID";
-    let redirect_uri = encodeURIComponent("https://nguyenkhois.github.io/advjs-youtubesearch/public/");
+    let redirect_uri = encodeURIComponent("YOUR_URI");
     let response_type = "token";
 
     let urlAuth = `https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&include_granted_scopes=true&state=state_parameter_passthrough_value&redirect_uri=${redirect_uri}&response_type=${response_type}&client_id=${client_id}`;
+
+    let accessToken = getParamFromUrl('access_token') || "";
+    if (accessToken === ""){
+        btnAuth.prop('disabled', false);
+        btnSearch.prop('disabled', true);
+    }else{
+        btnAuth.prop('disabled', true);
+        btnSearch.prop('disabled', false);
+    }
+
 
     btnAuth.click(function (event) {
         event.preventDefault();
@@ -59,8 +69,6 @@ $(document).ready(function () {
     //-----Begin search from API-----
     btnSearch.click(function () {
         let searchContent = encodeURIComponent(txtSearchContent.val());
-        let accessToken = getParamFromUrl('access_token');
-
         let maxResults = 10;
         let part = "snippet";
 
@@ -82,5 +90,4 @@ $(document).ready(function () {
         });
     });
     //-----End of search from API-----
-    
 });
