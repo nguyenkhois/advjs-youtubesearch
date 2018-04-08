@@ -1,7 +1,7 @@
 # Advance JS - GYoutubeSearch
 * The simple example web app which using Youtube API
 * Versions:
-    * Pure JavaScript version ([`purejs branch`]() - [Demo](https://nguyenkhois.github.io/advjs-youtubesearch/demo/purejs/))
+    * Pure JavaScript version ([`purejs branch`](https://github.com/nguyenkhois/advjs-youtubesearch/tree/purejs) - [Demo](https://nguyenkhois.github.io/advjs-youtubesearch/demo/purejs/))
     * jQuery version (master branch - [Demo](https://nguyenkhois.github.io/advjs-youtubesearch/public/))
 
 ## Screenshot
