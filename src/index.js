@@ -44,10 +44,8 @@ $(document).ready(function () {
 
     //MAIN
     //-----Authorization the user-----
-    //let client_id = "YOUR_CLIENT_ID";
-    //let redirect_uri = encodeURIComponent("YOUR_URI");
-    let client_id = "50523264751-9vi8klbs55hcfu8h3d3g9h2uv8kli0b2.apps.googleusercontent.com";
-    let redirect_uri = encodeURIComponent("http://localhost:3000");
+    let client_id = "YOUR_CLIENT_ID";
+    let redirect_uri = encodeURIComponent("YOUR_REDIRECT_URI");
     let response_type = "token";
 
     let urlAuth = `https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&include_granted_scopes=true&state=state_parameter_passthrough_value&redirect_uri=${redirect_uri}&response_type=${response_type}&client_id=${client_id}`;
@@ -60,7 +58,6 @@ $(document).ready(function () {
         btnAuth.prop('disabled', true);
         btnSearch.prop('disabled', false);
     }
-
 
     btnAuth.click(function (event) {
         event.preventDefault();
